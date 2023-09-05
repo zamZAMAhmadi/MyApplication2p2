@@ -3,4 +3,6 @@
     <string name="increment">Increment</string>
     <string name="hello_dad">Hello Dad</string>
     <string name="decrement">Decrement</string>
+    <string name="how_many_stars_are_in_this_image">✧･ﾟHow many stars are in this image?*✧･ﾟ</string>
+    <string name="todo">TODO</string>
 </resources>

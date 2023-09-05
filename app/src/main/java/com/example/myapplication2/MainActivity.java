@@ -2,6 +2,7 @@ package com.example.myapplication2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         greetingDisplay = findViewById(R.id.greeting_textview);
         greetingDisplay = findViewById(R.id.greeting_textview);
         incrementButton.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                 System.out.println("incrementing: " + ++count);
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @SuppressLint("SetTextI18n")
     public void decrement(View view) {
         System.out.println("decrementing: " + --count);
         greetingDisplay.setText(""+ count);
